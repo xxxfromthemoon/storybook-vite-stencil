@@ -10,7 +10,6 @@ const config: StorybookViteConfig = {
     ),
   ],
   addons: ["@storybook/addon-links", "@storybook/addon-essentials"],
-  staticDirs: ["../packages/core/src/assets"],
   framework: "@storybook/web-components",
   core: {
     builder: "@storybook/builder-vite",
