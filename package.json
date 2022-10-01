@@ -1,0 +1,35 @@
+{
+  "name": "storybookvitestencil",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:stencil": "stencil build --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "_stencil_build": "npm run build --prefix ./packages/stencil",
+    "_stencil_watch": "npm run watch --prefix ./packages/stencil",
+    "_storybook_watch": "start-storybook -p 6001 --no-manager-cache",
+    "storybook:watch": "npm-run-all _stencil_build --parallel _storybook_watch _stencil_watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/builder-vite": "^0.2.3",
+    "@storybook/web-components": "^6.5.12",
+    "babel-loader": "^8.2.5",
+    "jsx-dom": "^8.0.3",
+    "lit-html": "^2.3.1",
+    "npm-run-all": "^4.1.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4",
+    "vite": "^3.1.4",
+    "vite-plugin-babel": "^1.1.2"
+  }
+}
